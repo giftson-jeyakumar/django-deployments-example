@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "levelfourapp/base.html" %}
+{% block body_block %}
+{% load my_extras %}
+    <h1>Welcome to Index</h1>
+    <h2>This is from the index!</h2>
+    <h3>
+      {{ text|my_cut:'hello' }}
+      {{ number|add:"99" }}
+    </h3>
+
+{% endblock %}
